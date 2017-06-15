@@ -1,13 +1,13 @@
 module.exports = [
   {
-    ExponentAccelerometer: [
+    Accelerometer: [
       { setUpdateInterval: 'function' },
       { addListener: 'function' },
       { removeListeners: 'function' },
     ],
   },
   {
-    ExponentAmplitude: [
+    Amplitude: [
       { initialize: 'function' },
       { setUserId: 'function' },
       { setUserProperties: 'function' },
@@ -17,9 +17,9 @@ module.exports = [
       { setGroup: 'function' },
     ],
   },
-  { ExponentAppLoadingManager: [{ finishedAsync: 'function' }] },
+  { AppLoadingManager: [{ finishedAsync: 'function' }] },
   {
-    ExponentAudio: [
+    Audio: [
       { setIsEnabled: 'function' },
       { setAudioMode: 'function' },
       { load: 'function' },
@@ -43,15 +43,15 @@ module.exports = [
     ],
   },
   {
-    ExponentBarCodeScannerManager: [
+    BarCodeScannerManager: [
       { BarCodeType: 'object' },
       { Type: 'object' },
       { TorchMode: 'object' },
     ],
   },
-  { ExponentBlurViewManager: [] },
+  { BlurViewManager: [] },
   {
-    ExponentConstants: [
+    Constants: [
       { isDevice: 'boolean' },
       { linkingUri: 'string' },
       { deviceId: 'string' },
@@ -66,52 +66,52 @@ module.exports = [
       { appOwnership: 'string' },
     ],
   },
-  { ExponentContacts: [{ getContactsAsync: 'function' }] },
-  { ExponentDocumentPicker: [{ getDocumentAsync: 'function' }] },
-  { ExponentErrorRecovery: [{ setRecoveryProps: 'function' }] },
-  { ExponentFacebook: [{ logInWithReadPermissionsAsync: 'function' }] },
+  { Contacts: [{ getContactsAsync: 'function' }] },
+  { DocumentPicker: [{ getDocumentAsync: 'function' }] },
+  { ErrorRecovery: [{ setRecoveryProps: 'function' }] },
+  { Facebook: [{ logInWithReadPermissionsAsync: 'function' }] },
   {
-    ExponentFileSystem: [
+    FileSystem: [
       { downloadAsync: 'function' },
       { getInfoAsync: 'function' },
       { deleteAsync: 'function' },
     ],
   },
   {
-    ExponentFingerprint: [
+    Fingerprint: [
       { hasHardwareAsync: 'function' },
       { isEnrolledAsync: 'function' },
       { authenticateAsync: 'function' },
     ],
   },
-  { ExponentFontLoader: [{ loadAsync: 'function' }] },
-  { ExponentGLViewManager: [] },
-  { ExponentGoogle: [{ logInAsync: 'function' }] },
+  { FontLoader: [{ loadAsync: 'function' }] },
+  { GLViewManager: [] },
+  { Google: [{ logInAsync: 'function' }] },
   {
-    ExponentGyroscope: [
+    Gyroscope: [
       { setUpdateInterval: 'function' },
       { addListener: 'function' },
       { removeListeners: 'function' },
     ],
   },
   {
-    ExponentImagePicker: [
+    ImagePicker: [
       { launchCameraAsync: 'function' },
       { launchImageLibraryAsync: 'function' },
     ],
   },
-  { ExponentKeepAwake: [{ activate: 'function' }, { deactivate: 'function' }] },
+  { KeepAwake: [{ activate: 'function' }, { deactivate: 'function' }] },
   {
-    ExponentLegacyAsyncLocalStorage: [
+    LegacyAsyncLocalStorage: [
       { multiGet: 'function' },
       { getAllKeys: 'function' },
       { isMigrationDone: 'function' },
       { setMigrationDone: 'function' },
     ],
   },
-  { ExponentLinearGradientManager: [] },
+  { LinearGradientManager: [] },
   {
-    ExponentLocation: [
+    Location: [
       { getCurrentPositionAsync: 'function' },
       { watchPositionImplAsync: 'function' },
       { removeWatchAsync: 'function' },
@@ -120,7 +120,7 @@ module.exports = [
     ],
   },
   {
-    ExponentNotifications: [
+    Notifications: [
       { presentLocalNotification: 'function' },
       { getExponentPushTokenAsync: 'function' },
       { scheduleLocalNotification: 'function' },
@@ -130,11 +130,11 @@ module.exports = [
       { setBadgeNumberAsync: 'function' },
     ],
   },
-  { ExponentPermissions: [{ getAsync: 'function' }, { askAsync: 'function' }] },
-  { ExponentSQLite: [{ exec: 'function' }] },
-  { ExponentScope: [] },
+  { Permissions: [{ getAsync: 'function' }, { askAsync: 'function' }] },
+  { SQLite: [{ exec: 'function' }] },
+  { Scope: [] },
   {
-    ExponentSegment: [
+    Segment: [
       { initializeIOS: 'function' },
       { initializeAndroid: 'function' },
       { identify: 'function' },
@@ -145,13 +145,13 @@ module.exports = [
     ],
   },
   {
-    ExponentUtil: [
+    Util: [
       { reload: 'function' },
       { getCurrentLocaleAsync: 'function' },
     ],
   },
   {
-    ExponentVideoManager: [
+    VideoManager: [
       { ScaleToFill: 'string' },
       { ScaleAspectFill: 'string' },
       { ScaleAspectFit: 'string' },
@@ -159,7 +159,7 @@ module.exports = [
     ],
   },
   {
-    ExponentWebBrowser: [
+    WebBrowser: [
       { dismissBrowser: 'function' },
       { openBrowserAsync: 'function' },
     ],
